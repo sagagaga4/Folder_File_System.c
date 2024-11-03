@@ -145,11 +145,10 @@ int main()
         printf("\033[34m INPUT ERROR\033[0m\n");
         exit(1);
     }
-
+    
     getchar();
-
+    
     switch(operation)
-
     {
         case(1):
 
@@ -222,7 +221,6 @@ int main()
                         }
                         Delete_Folder(&folder);
                 }
-
             }
 
         case(0):
