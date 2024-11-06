@@ -154,11 +154,13 @@ int main()
 
             {
                 printf("\033[34mwelcome_user\033[0m\033[36m@root$\033[0m Enter folder name:");
+                
                 if (fgets(folder_name, sizeof(folder_name), stdin) == NULL || strlen(folder_name) <= 0) 
                 {
                     printf("\033[34m INPUT ERROR\033[0m\n");
                     exit(1);
                 }
+                
                 folder_name[strcspn(folder_name, "\n")] = '\0'; // remove newline character
                 Create_Folder(&folder, folder_name);
 
@@ -222,7 +224,7 @@ int main()
                         Delete_Folder(&folder);
                 }
             }
-
+        
         case(0):
 
             {
